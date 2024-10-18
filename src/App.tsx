@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import Pricing from "@/pages/pricing/presentation/Pricing";
-
-const Home: FC = () => <div>Home Page</div>;
+import Home from "@/pages/home/presentation/Home";
 
 const App: FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);

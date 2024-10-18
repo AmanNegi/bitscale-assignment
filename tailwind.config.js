@@ -7,6 +7,7 @@ export default {
       colors: {
         primaryAccent: "var(--accent-color)",
         lightAccent: "var(--accent-light-color)",
+        secondary: "var(--secondary-color)",
         bodyText: "var(--text-color)",
         headingText: "var(--heading-color)",
         lightSuccess: "var(--success-light-color)",
