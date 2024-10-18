@@ -1,5 +1,8 @@
 import { IPricingData } from "@/types/pages/pricing";
 
+/**
+ * Pricing data for all the tiers (currently same for annual and monthly)
+ */
 export const pricingData: IPricingData[] = [
   {
     tier: "Trial",

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 import { RiDiscountPercentLine } from "react-icons/ri";
+
 import { cn } from "@/lib/utils";
 import {
   IFeatureList,
@@ -8,6 +9,9 @@ import {
   IPricingHeader,
 } from "@/types/pages/pricing";
 
+/**
+ * Pricing card component to display pricing details of one tier 
+ */
 export const PricingCard: React.FC<IPricingData> = ({
   tier,
   price,

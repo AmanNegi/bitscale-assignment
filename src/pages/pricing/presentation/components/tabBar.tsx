@@ -6,6 +6,9 @@ interface TabBarProps {
   onToggle: (isAnnual: boolean) => void;
 }
 
+/**
+ * TabBar present at top of the pricing page 
+ */
 const TabBar: FC<TabBarProps> = ({ isAnnual, onToggle }) => {
   return (
     <div className="flex justify-center items-center">

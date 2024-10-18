@@ -8,6 +8,7 @@ import Home from "@/pages/home/presentation/Home";
 const App: FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Load theme from local storage 
   useEffect(() => {
     const savedTheme = localStorage.getItem("isDarkMode");
     if (savedTheme !== null) {
@@ -15,6 +16,7 @@ const App: FC = () => {
     }
   }, []);
 
+  // Change theme based on state
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
@@ -33,7 +35,7 @@ const App: FC = () => {
     <Router>
       <button
         onClick={toggleTheme}
-        className="fixed bottom-4 right-4 p-3 rounded-full bg-blue-500 text-white shadow-lg hover:bg-blue-600 transition-colors z-50"
+        className="fixed bottom-4 right-4 p-3 rounded-full bg-primaryAccent text-white shadow-lg hover:bg-secondary transition-colors z-50"
       >
         {isDarkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
       </button>

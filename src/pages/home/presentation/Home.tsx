@@ -1,4 +1,5 @@
 import React from "react";
+import { IconType } from "react-icons";
 import { FaEye, FaGithub, FaInfoCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -20,23 +21,28 @@ const Home: React.FC = () => {
         This assignment was quite easy and fun to work on. To me minor details,
         in the interface and code matters a lot, I hope that shows up in my
         work. I hope you like it! Here are a few things, I'd like to highlight:
-        <li className="mt-4">TypeSafe code with types where required</li>
-        <li>CSS Variables to ensure, consistency and reusability in design</li>
-        <li>
-          Follows Clean Architecture, increasing testability and scalability
-        </li>
-        <li>
-          Dark mode, primarily for developers {"(I can't stand Light Mode)"}
-        </li>
-        <li>
-          Well documented codebase, with comments and proper naming conventions
-        </li>
-        <li> Utilizes Tailwind CSS and Framer Motion for a user-friendly UI</li>
+        <ul className="list-disc list-inside">
+          <li className="mt-4">TypeSafe code with types where required</li>
+          <li>CSS Variables to ensure consistency and reusability in design</li>
+          <li>
+            Follows Clean Architecture, increasing testability and scalability
+          </li>
+          <li>
+            Dark mode, primarily for developers {"(I can't stand Light Mode)"}
+          </li>
+          <li>
+            Well-documented codebase, with comments and proper naming
+            conventions
+          </li>
+          <li>
+            Utilizes Tailwind CSS and Framer Motion for a user-friendly UI
+          </li>
+        </ul>
       </p>
 
       <button
         onClick={() => navigate("/pricing")}
-        className="mb-4 px-6 py-3 bg-primaryAccent text-white rounded-md hover:bg-secondary transition duration-300"
+        className="mb-4 actionButton"
       >
         <FaEye className="inline-block mr-2" />
         View Assignment UI
@@ -45,7 +51,7 @@ const Home: React.FC = () => {
       <div className="flex flex-row gap-4">
         <button
           onClick={() => navigateToLink(githubUrl)}
-          className="px-6 py-3 bg-primaryAccent text-white rounded-md hover:bg-secondary transition duration-300"
+          className="actionButton"
         >
           <FaGithub className="inline-block mr-2" />
           View Source Code
@@ -53,7 +59,7 @@ const Home: React.FC = () => {
 
         <button
           onClick={() => navigateToLink(personalUrl)}
-          className="px-6 py-3 bg-primaryAccent text-white rounded-md hover:bg-secondary transition duration-300"
+          className="actionButton"
         >
           <FaInfoCircle className="inline-block mr-2" />
           Learn more about me!

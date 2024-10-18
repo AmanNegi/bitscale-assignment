@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variables for light mode */
 :root{
     --background-color: #FFFFFF;
     --accent-color: #1A56DB;
@@ -16,6 +17,7 @@
     --gradient-primary: linear-gradient(180deg, #1E429F 0%, #0B1839 100%);
 }   
 
+/* Variables for dark mode */
 .dark {
     --background-color: #111827;
     --accent-color: #1A73E8;
@@ -38,4 +40,8 @@ html{
 body {
   background-color: var(--background-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+.actionButton{
+    @apply text-white rounded-md bg-primaryAccent hover:bg-secondary py-3 px-6 transition duration-300;
 }
