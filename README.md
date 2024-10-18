@@ -17,13 +17,11 @@ work. I hope you like it! Here are a few things, I'd like to highlight:
 </ul>
 
 
-## Screenshots 
+## Screenshots 🖥️📱
 
 ### Pricing Page (/pricing)
-<div style="display: flex; justify-content: space-around;">
-  <img src="./docs/assets/img_light.png" alt="Light Mode" style="width: 45%;"/>
-  <img src="./docs/assets/img_dark.png" alt="Dark Mode" style="width: 45%;"/>
-</div>
+![LightMode](./docs/assets/img_light.png)
+![DarkMode](./docs/assets/img_dark.png)
 
 ### Home Page (/)
 
@@ -53,7 +51,7 @@ src/
 │   └── pages/
 │       └── pricing.ts #Types for Pricing component
 ├──  lib/
-│   └── utils.ts #Entails utils (currenlty cn())
+│   └── utils.ts #Entails utils (currently cn())
 ├── App.tsx
 ├── index.css 
 ├── main.tsx
